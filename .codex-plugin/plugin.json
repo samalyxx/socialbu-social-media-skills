@@ -1,0 +1,22 @@
+{
+  "name": "socialbu-social-media-skills",
+  "description": "Nine safety-first SocialBu skills for social media content, planning, engagement, analytics, automations, approvals, and MCP operations.",
+  "version": "0.1.0",
+  "author": { "name": "SocialBu Social Media Skills contributors" },
+  "license": "MIT",
+  "homepage": "https://github.com/samalyxx/socialbu-social-media-skills",
+  "repository": "https://github.com/samalyxx/socialbu-social-media-skills",
+  "keywords": ["socialbu", "social-media-management", "social-media-scheduling", "content-calendar", "analytics", "codex-skills", "openclaw", "mcp"],
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "SocialBu Social Media Skills",
+    "shortDescription": "Social media workflows for Codex and OpenClaw.",
+    "longDescription": "A safety-first skill bundle for SocialBu-oriented content, publishing preparation, engagement, analytics, automation, approvals, and MCP operations.",
+    "developerName": "SocialBu Social Media Skills contributors",
+    "category": "Productivity",
+    "capabilities": ["Interactive", "Read", "Write"],
+    "websiteURL": "https://socialbu.com/",
+    "defaultPrompt": ["Draft a LinkedIn post from these notes.", "Plan next week's social content.", "Review my SocialBu calendar without changing anything."],
+    "brandColor": "#4f46e5"
+  }
+}
