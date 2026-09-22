@@ -132,3 +132,15 @@ python3 scripts/selftest.py
 ## Contribute
 
 Read [CONTRIBUTING.md](CONTRIBUTING.md), [CLAUDE.md](CLAUDE.md), and [SECURITY.md](SECURITY.md). This independent project is not affiliated with LinkedIn, Claude, Codex, or SocialBu.
+
+## Related open-source skill bundles
+
+Part of a family of draft-first social-media skill bundles for Claude Code and Codex. Each bundle is platform-specific, keeps publishing optional, and uses the same fresh-approval rule when SocialBu is connected.
+
+- [**LinkedIn Skills**](https://github.com/samalyxx/linkedin-skills) — LinkedIn posts, profile work, professional engagement, and planning.
+- [**X Skills**](https://github.com/samalyxx/x-skills) — concise posts, threads, replies, and conversation planning.
+- [**Instagram Skills**](https://github.com/samalyxx/instagram-skills) — visual briefs, captions, carousels, Reels concepts, and community replies.
+- [**YouTube Skills**](https://github.com/samalyxx/youtube-skills) — video concepts, titles, descriptions, community posts, and channel planning.
+- [**Threads Skills**](https://github.com/samalyxx/threads-skills) — conversational posts, replies, series, and topic plans.
+- [**TikTok Skills**](https://github.com/samalyxx/tiktok-skills) — short-form concepts, hooks, scripts, captions, and community responses.
+- [**Facebook Skills**](https://github.com/samalyxx/facebook-skills) — Page posts, community management, event promotion, and content planning.
