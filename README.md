@@ -1,8 +1,12 @@
 # LinkedIn Skills for Claude Code and Codex
 
-[![License: MIT](https://img.shields.io/badge/license-MIT-0b1020.svg)](LICENSE)
+[![Release](https://img.shields.io/badge/release-v3.0.0-1D4ED8.svg)](https://github.com/samalyxx/linkedin-skills/releases)
 [![Claude Code compatible](https://img.shields.io/badge/Claude_Code-compatible-7C3AED.svg)](.claude-plugin/plugin.json)
 [![Codex compatible](https://img.shields.io/badge/Codex-compatible-0A66C2.svg)](.codex-plugin/plugin.json)
+[![Claude Skills](https://img.shields.io/badge/Claude-Skills-7C3AED.svg)](.claude-plugin/plugin.json)
+[![License: MIT](https://img.shields.io/badge/license-MIT-22C55E.svg)](LICENSE)
+[![GitHub stars](https://img.shields.io/github/stars/samalyxx/linkedin-skills?style=flat&logo=github)](https://github.com/samalyxx/linkedin-skills/stargazers)
+[![PRs welcome](https://img.shields.io/badge/PRs-welcome-F59E0B.svg)](CONTRIBUTING.md)
 
 **LinkedIn Skills** is an installable LinkedIn marketing toolkit for Claude Code and Codex. Its 12 focused skills draft posts, comments, and replies in your voice; turn source material into a content plan; audit profiles and engagement; and keep a human approval step before optional publishing.
 
