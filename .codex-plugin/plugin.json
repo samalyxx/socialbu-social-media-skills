@@ -1,22 +1,24 @@
 {
-  "name": "socialbu-linkedin-skills",
-  "description": "Thirteen LinkedIn-first skills for evidence-based writing, planning, engagement, profiles, measurement, and confirmation-gated SocialBu publishing.",
-  "version": "2.0.0",
-  "author": { "name": "SocialBu LinkedIn Skills contributors" },
+  "name": "linkedin-skills",
+  "description": "Twelve draft-first LinkedIn operations skills for evidence-led content, conversations, profiles, advocacy, interviews, monitoring, and analytics.",
+  "version": "3.0.0",
+  "author": { "name": "LinkedIn Skills contributors" },
   "license": "MIT",
-  "homepage": "https://github.com/samalyxx/socialbu-social-media-skills",
-  "repository": "https://github.com/samalyxx/socialbu-social-media-skills",
-  "keywords": ["socialbu", "linkedin", "linkedin-content", "employee-advocacy", "social-selling", "content-planning", "analytics", "codex-skills", "openclaw", "mcp"],
+  "keywords": ["linkedin", "content-operations", "employee-advocacy", "analytics", "codex-skills"],
   "skills": "./skills/",
   "interface": {
-    "displayName": "SocialBu LinkedIn Skills",
-    "shortDescription": "Operational LinkedIn workflows with safe SocialBu publishing.",
-    "longDescription": "A LinkedIn-first bundle for writing, repurposing, planning, comments, replies, advocacy, profiles, thread monitoring, measurement, story capture, and exactly confirmed publishing through SocialBu MCP.",
-    "developerName": "SocialBu LinkedIn Skills contributors",
+    "displayName": "LinkedIn Skills",
+    "shortDescription": "Draft-first LinkedIn content operations.",
+    "longDescription": "Evidence-led workflows for LinkedIn writing, adaptation, planning, conversation triage, advocacy, profiles, interviews, thread review, and analytics.",
+    "developerName": "LinkedIn Skills contributors",
     "category": "Productivity",
-    "capabilities": ["Interactive", "Read", "Write"],
-    "websiteURL": "https://socialbu.com/",
-    "defaultPrompt": ["Draft a LinkedIn post from these verified notes.", "Plan a month of evidence-led LinkedIn content.", "Prepare a SocialBu scheduling preview, but wait for my exact confirmation."],
+    "capabilities": ["Interactive", "Read"],
+    "websiteURL": "https://www.linkedin.com/",
+    "defaultPrompt": [
+      "Draft a LinkedIn post from these verified notes.",
+      "Turn this interview into an evidence ledger and content brief.",
+      "Analyze this LinkedIn export and separate findings from hypotheses."
+    ],
     "brandColor": "#0A66C2"
   }
 }

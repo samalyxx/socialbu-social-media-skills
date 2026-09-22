@@ -39,4 +39,4 @@ Return:
 - `Facts to verify` — only claims that still need confirmation;
 - `Assumptions` — any non-factual choices made.
 
-Offer alternate openings only when requested or when they represent a defined test. This skill does not publish or schedule. If the user requests execution, hand the final approved copy to `socialbu-linkedin-publisher`.
+Offer alternate openings only when requested or when they represent a defined test. This skill does not publish or schedule. For an explicitly requested connected action, read the optional publishing boundary in `references/socialbu-publishing.md` and obtain fresh confirmation for the final unchanged preview.

@@ -1,0 +1,18 @@
+{
+  "name": "linkedin-skills-local",
+  "owner": { "name": "LinkedIn Skills contributors" },
+  "metadata": {
+    "description": "Repository-local marketplace for LinkedIn Skills."
+  },
+  "plugins": [
+    {
+      "name": "linkedin-skills",
+      "source": "./",
+      "description": "Draft-first LinkedIn content operations with evidence and approval boundaries.",
+      "version": "3.0.0",
+      "author": { "name": "LinkedIn Skills contributors" },
+      "keywords": ["linkedin", "content-operations", "analytics"],
+      "category": "productivity"
+    }
+  ]
+}

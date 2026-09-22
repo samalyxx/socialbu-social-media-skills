@@ -1,9 +1,9 @@
 ---
-name: linkedin-hook-lab
+name: linkedin-hook-extractor
 description: Generate, diagnose, and rank LinkedIn opening-line options against a supplied post body, audience, evidence, and voice. Use for hook exploration rather than full post drafting.
 ---
 
-# LinkedIn hook lab
+# LinkedIn hook extractor
 
 Develop opening lines that set up the actual post instead of optimizing for empty curiosity. Read [LinkedIn hooks](../../references/linkedin-hooks.md) and use the evidence rules in [LinkedIn writing](../../references/linkedin-writing.md).
 
