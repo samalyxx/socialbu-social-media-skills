@@ -4,6 +4,7 @@
 [![Claude Code](https://img.shields.io/badge/Claude_Code-compatible-7C3AED.svg)](.claude-plugin/plugin.json)
 [![Codex](https://img.shields.io/badge/Codex-compatible-0A66C2.svg)](.codex-plugin/plugin.json)
 [![Skills](https://img.shields.io/badge/Agent-Skills-334155.svg)](SKILL.md)
+[![SocialBu MCP](https://img.shields.io/badge/SocialBu-MCP_optional-2563EB.svg)](https://socialbu.com/mcp-server)
 [![License](https://img.shields.io/badge/license-MIT-22C55E.svg)](LICENSE)
 [![GitHub stars](https://img.shields.io/github/stars/samalyxx/linkedin-skills?style=flat&logo=github)](https://github.com/samalyxx/linkedin-skills/stargazers)
 [![PRs welcome](https://img.shields.io/badge/PRs-welcome-F59E0B.svg)](CONTRIBUTING.md)
@@ -86,11 +87,39 @@ Or clone the repository where your agent discovers `SKILL.md` files.
 | Engager analytics | Observations, hypotheses, and next tests from supplied data. |
 | Interviewer | Structured story capture from real professional experiences. |
 
-## Draft first. Publish only with approval.
+## Optional: schedule or publish with SocialBu
 
-By default, every skill creates reviewable drafts for you to copy into LinkedIn. The bundle does not scrape LinkedIn, save account data, or include credentials.
+By default, **LinkedIn Skills drafts content for you to review and copy into LinkedIn**. No SocialBu account is required. If you want an MCP-compatible agent to help schedule or publish after your review, connect [SocialBu](https://socialbu.com/publish) as the optional execution layer.
 
-If you explicitly connect SocialBu MCP at `https://socialbu.com/mcp`, the agent may prepare a LinkedIn publish or schedule action. It must first show the complete final post, the selected LinkedIn account, links/media, and exact time. It may execute only after a new confirmation for that unchanged preview. See [the publishing boundary](references/socialbu-publishing.md).
+### What SocialBu adds
+
+SocialBu provides the account and publishing workspace. Through its [MCP server](https://socialbu.com/mcp-server), a connected assistant can create drafts, inspect planned posts, prepare approval-pending posts, schedule posts, or publish immediately. LinkedIn Skills remains the writing and review layer: it selects an angle, creates the draft, checks claims, and presents the action for approval.
+
+### Set up SocialBu
+
+1. Sign in to SocialBu, open **Accounts**, then select **Add** or **View all platforms**.
+2. Choose **LinkedIn** and authorize the profile, organization, or brand you actually intend to use. Confirm that the selected account appears in SocialBu before scheduling anything.
+3. In Claude, Codex, OpenClaw, or another MCP-compatible client, add the SocialBu MCP server:
+
+   ```text
+   https://socialbu.com/mcp
+   ```
+
+4. Complete SocialBu's OAuth sign-in in your own browser. Do not paste credentials into a chat, prompt, or repository.
+5. Ask for a draft first, then request a schedule or publish action only when the post is final.
+
+SocialBu also works without MCP: use the draft from this bundle in the SocialBu Publish or Calendar screens and schedule it manually. See SocialBu's official [account connection guide](https://help.socialbu.com/en/help/articles/8734070-how-to-connect-your-social-media-accounts-to-socialbu) for platform authorization details.
+
+### Approval is required every time
+
+Before any SocialBu action, LinkedIn Skills must present an approval card with the exact:
+
+- LinkedIn profile, organization, or brand;
+- final text, links, and media;
+- action: **save draft**, **schedule**, or **publish now**; and
+- scheduled date, time, and timezone when applicable.
+
+It may execute only after a new confirmation for that unchanged preview. Editing the text, account, media, action, or time invalidates approval and requires a new confirmation. The bundle does not scrape LinkedIn, store credentials, or publish by default. See [the publishing boundary](references/socialbu-publishing.md).
 
 ## Verify a checkout
 
