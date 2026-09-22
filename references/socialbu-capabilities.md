@@ -1,17 +1,33 @@
-# SocialBu capabilities reference
+# SocialBu capability and execution boundary
 
-Use this file for product-boundary checks, not as a promise that every account, plan, or connected network has every feature.
+Use this file before making a SocialBu-specific claim or using SocialBu MCP. It records public product boundaries, not a promise that a particular workspace, plan, LinkedIn account, or tool exposes every capability.
 
-## Publicly documented capabilities
+## Documented product surface
 
-- SocialBu provides publishing and scheduling, AI content generation, content curation, listening, a social inbox, automation, analytics, and collaboration. Source: [SocialBu product overview](https://socialbu.com/).
-- The publishing workspace can prepare posts for multiple connected accounts, customize per-network settings, publish immediately, schedule, queue, save drafts, or use approval workflows where available. Source: [Publish](https://socialbu.com/publish) and [create and schedule posts](https://help.socialbu.com/en/articles/7733804-create-and-schedule-posts-in-socialbu).
-- SocialBu MCP is an OAuth-authorized bridge for compatible clients. Its documented operations include posts, schedules, analytics, teams, accounts, automations, and curated content. Source: [MCP Server](https://socialbu.com/mcp-server). Endpoint: `https://socialbu.com/mcp`.
-- The API covers publishing, account management, analytics, team collaboration, media, AI content, and more. Source: [SocialBu API](https://socialbu.com/api).
+- SocialBu publicly describes publishing and scheduling, content creation and curation, a social inbox, monitoring, analytics, collaboration, and automations. Source: [SocialBu](https://socialbu.com/).
+- Publishing options can include immediate publishing, scheduling, queues, drafts, network-specific settings, and approval workflows where available. Sources: [Publish](https://socialbu.com/publish) and [create and schedule posts](https://help.socialbu.com/en/articles/7733804-create-and-schedule-posts-in-socialbu).
+- SocialBu MCP is an OAuth-authorized bridge for compatible clients. The connection endpoint for this bundle is exactly `https://socialbu.com/mcp`. Public documentation: [SocialBu MCP](https://socialbu.com/mcp-server).
 
-## Constraints to preserve
+Product behavior can vary by plan, workspace role, connected network and account type, media, permissions, platform APIs, and the MCP tools currently exposed. Inspect the live tool schema and authorized workspace before relying on a capability. Do not guess prices, limits, support, account access, identifiers, or current platform constraints.
 
-- Connected account options vary by network, account type, media, permissions, plan, and platform API rules.
-- Never infer that an account is connected or a tool is available. Inspect authorized data or ask the user.
-- Never claim a current price, plan limit, or network capability without checking the applicable SocialBu page. Product information changes.
-- MCP authorization permits tool access; it does not replace user confirmation for consequential actions.
+## Operating modes
+
+**Draft mode:** Use user-provided briefs, text, exports, screenshots, or metrics. Return drafts and recommendations without claiming account access.
+
+**Connected read mode:** With an authorized MCP connection, perform only the minimum read needed for the request. Reads can include listing or inspecting available accounts, posts, schedules, threads, and analytics when exposed by the live schema. Treat returned data as private.
+
+**Connected action mode:** Publishing, scheduling, or enabling an autopost behavior is an external state change. Authorization to connect or read is not authorization to mutate.
+
+## Exact-action confirmation protocol
+
+Immediately before every publish, schedule, or autopost action:
+
+1. Inspect the current tool schema and resolve the exact target account; never infer either.
+2. Present a final preview containing the full content, media or link details, target LinkedIn account, action type, and exact scheduled date, time, and timezone when relevant.
+3. State any unresolved limitation or ambiguity.
+4. Ask the user to confirm that exact action. Confirmation must be an unambiguous affirmative response after the preview and in the same conversational context.
+5. Execute once, then report the returned status and identifier without exposing credentials.
+
+A request to draft, a general instruction such as “handle publishing,” approval of an earlier version, or a confirmation given before content, account, action, or timing changed is not valid execution confirmation. Each distinct action needs its own confirmation; never use blanket confirmation for a batch. If a call fails or its outcome is unclear, do not retry a state change without showing the current state and obtaining fresh confirmation.
+
+Do not request, store, log, or expose OAuth tokens, session cookies, API keys, or other credentials. This repository contains instructions only and must not add a SocialBu client library or custom product integration.
