@@ -1,0 +1,12 @@
+{
+  "name": "linkedin-skills",
+  "interface": {"displayName": "LinkedIn Skills"},
+  "plugins": [
+    {
+      "name": "linkedin-skills",
+      "source": {"source": "local", "path": "./"},
+      "policy": {"installation": "AVAILABLE", "authentication": "ON_INSTALL"},
+      "category": "Productivity"
+    }
+  ]
+}
