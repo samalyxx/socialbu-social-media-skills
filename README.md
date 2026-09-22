@@ -1,16 +1,20 @@
-# LinkedIn Skills
+# LinkedIn Skills for Claude Code and Codex
 
-An installable, LinkedIn-first skill bundle for Codex and Claude. It turns verified source material into posts, comments, replies, plans, profile improvements, and measurement reviews—without pretending to have LinkedIn access.
+[![License: MIT](https://img.shields.io/badge/license-MIT-0b1020.svg)](LICENSE)
+[![Claude Code compatible](https://img.shields.io/badge/Claude_Code-compatible-7C3AED.svg)](.claude-plugin/plugin.json)
+[![Codex compatible](https://img.shields.io/badge/Codex-compatible-0A66C2.svg)](.codex-plugin/plugin.json)
+
+**LinkedIn Skills** is an installable LinkedIn marketing toolkit for Claude Code and Codex. Its 12 focused skills draft posts, comments, and replies in your voice; turn source material into a content plan; audit profiles and engagement; and keep a human approval step before optional publishing.
 
 ![LinkedIn Skills hero](assets/linkedin-skills-hero.png)
 
-## What it includes
+## Built for real LinkedIn work
 
-Twelve narrow workflows: post writer, comment drafter, reply handler, humanizer, hook extractor, content planner, profile optimizer, repurposer, employee advocacy, thread monitor, engager analytics, and interviewer. Each skill defines the information it needs, an operating sequence, quality gates, and a reviewable output.
+Twelve narrow workflows: post writer, comment drafter, reply handler, humanizer, hook extractor, content planner, profile optimizer, repurposer, employee advocacy, thread monitor, engager analytics, and interviewer. Each has a concrete input contract, operating sequence, quality gates, and reviewable output.
 
 ![Draft-to-approval workflow](assets/linkedin-skills-workflow.png)
 
-## Draft-first workflow
+## How it works
 
 1. Choose the narrowest skill in [SKILL.md](SKILL.md).
 2. Supply source notes, the intended audience, objective, and any approved claims.
