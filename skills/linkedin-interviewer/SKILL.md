@@ -1,9 +1,9 @@
 ---
-name: linkedin-story-bank
-description: Capture real professional experiences as a structured, reusable LinkedIn story inventory without inventing events, dialogue, emotions, or lessons. Use for interviews, notes, and ongoing idea capture.
+name: linkedin-interviewer
+description: Interview for real professional experiences and return a structured LinkedIn story inventory without inventing events, dialogue, emotions, or lessons.
 ---
 
-# LinkedIn story bank
+# LinkedIn interviewer
 
 Build a source-of-truth inventory from the user's actual experiences. Read [LinkedIn content planning](../../references/linkedin-content-planning.md) for editorial fields and [LinkedIn writing](../../references/linkedin-writing.md) for evidence boundaries.
 

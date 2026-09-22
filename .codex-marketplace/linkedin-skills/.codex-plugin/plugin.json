@@ -1,0 +1,22 @@
+{
+  "name": "linkedin-skills",
+  "description": "Twelve draft-first LinkedIn workflows for writing, engagement, planning, profiles, and analytics.",
+  "version": "3.0.0",
+  "author": { "name": "LinkedIn Skills contributors" },
+  "license": "MIT",
+  "homepage": "https://github.com/samalyxx/socialbu-social-media-skills",
+  "repository": "https://github.com/samalyxx/socialbu-social-media-skills",
+  "keywords": ["linkedin", "linkedin-content", "linkedin-writing", "codex-skills", "claude-code"],
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "LinkedIn Skills",
+    "shortDescription": "Draft-first LinkedIn content and engagement workflows.",
+    "longDescription": "Twelve focused workflows for evidence-led LinkedIn writing, planning, conversations, profiles, and performance reviews.",
+    "developerName": "LinkedIn Skills contributors",
+    "category": "Productivity",
+    "capabilities": ["Read", "Write"],
+    "websiteURL": "https://github.com/samalyxx/socialbu-social-media-skills",
+    "defaultPrompt": ["Draft a LinkedIn post from these verified notes.", "Review these LinkedIn comments and propose replies.", "Plan four LinkedIn posts from this source material."],
+    "brandColor": "#0A66C2"
+  }
+}

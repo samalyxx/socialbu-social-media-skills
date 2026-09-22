@@ -1,9 +1,9 @@
 ---
-name: linkedin-engagement-review
+name: linkedin-engager-analytics
 description: Analyze supplied or authorized LinkedIn content and engagement data, separate observations from hypotheses, and design measurable next tests. Use for retrospective performance review, not live-thread triage.
 ---
 
-# LinkedIn engagement review
+# LinkedIn engager analytics
 
 Explain what the available evidence supports and what to test next. Read [LinkedIn measurement](../../references/linkedin-measurement.md). Use [LinkedIn content planning](../../references/linkedin-content-planning.md) when turning findings into future briefs.
 

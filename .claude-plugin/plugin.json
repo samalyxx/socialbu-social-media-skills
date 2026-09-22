@@ -1,0 +1,8 @@
+{
+  "name": "linkedin-skills",
+  "description": "Twelve draft-first LinkedIn operations skills for evidence-led content, conversations, profiles, advocacy, interviews, monitoring, and analytics.",
+  "version": "3.0.0",
+  "author": { "name": "LinkedIn Skills contributors" },
+  "license": "MIT",
+  "keywords": ["linkedin", "content-operations", "employee-advocacy", "analytics"]
+}
